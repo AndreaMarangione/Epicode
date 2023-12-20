@@ -1,0 +1,22 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.cards {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

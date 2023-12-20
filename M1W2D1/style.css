@@ -1,0 +1,84 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+
+i {
+    font-size: 20px;
+}
+
+.size {
+    width: 300px;
+    height: 400px;
+    border-radius: 25px;
+}
+
+.containerPicture {
+    position: relative;
+}
+
+.opacity {
+    position: absolute;
+    top: 0;
+    background-color: black;
+    opacity: 0.4;
+    display: none;
+}
+
+.animation{
+    position: absolute;
+    top: 0;
+    display: none;
+    overflow: hidden;
+}
+
+.saveButton {
+    position: absolute;
+    top: -50px;
+    right: 20px;
+    width: 70px;
+    background-color: red;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    border: none;
+    transition: linear 0.2s;
+}
+
+.bottomButton {
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: linear 0.2s;
+}
+
+.fa-arrow-trend-up {
+    margin-right: 10px;
+}
+
+.grayBtm {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 7px 5px 7px;
+}
+
+.containerPicture:hover .opacity,
+.containerPicture:hover .animation{
+    display: flex;
+}
+
+.animation:hover .saveButton{
+    top: 20px;
+}
+
+.animation:hover .bottomButton{
+    bottom: 20px;
+}

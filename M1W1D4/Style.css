@@ -1,0 +1,256 @@
+:root {
+    --logo-bg: #222F3E;
+    --navbar-bg: #354758;
+    --header-bg: #F56600;
+    --link-color: #017185;
+    --body-bg: #EAEDED;
+    --section-bg: white;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--body-bg);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.navbar {
+    background-color: var(--logo-bg);
+}
+
+.logo {
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.logo-img {
+    width: 150px;
+}
+
+.bottomNavbar {
+    background-color: var(--navbar-bg);
+    color: white;
+}
+
+.navbar-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0 40px 0 40px;
+    padding: 7px;
+}
+
+.spacing {
+    padding: 20px;
+}
+
+.header {
+    margin-top: 10px;
+}
+
+.header-title {
+    background-color: var(--header-bg);
+    color: white;
+    padding: 10px;
+}
+
+.header-title h3 {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    text-align: center;
+}
+
+.header-imageContainer {
+    background-image: url(./assets/bg-image.png);
+    background-repeat: repeat;
+    background-size: contain;
+    margin-top: 40px;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-img {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.header-text {
+    color: white;
+}
+
+.header-text h2,
+.header-text h5 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.header-text h2 {
+    padding: 20px;
+    font-size: 30px;
+}
+
+.header-text h5 {
+    font-size: 20px;
+}
+
+.first-section {
+    background-color: var(--section-bg);
+    margin: 20px;
+}
+
+.textProduct {
+    padding: 15px 20px 10px 20px;
+    display: flex;
+    align-items: baseline;
+    gap: 20px;
+    font-weight: bold;
+    font-size: large;
+}
+
+.textProduct a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.endSection-textProduct {
+    padding: 15px 20px 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 20px;
+    font-weight: bold;
+    font-size: large;
+    text-align: center;
+}
+
+.endSection-textProduct a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 0.8em;
+}
+
+.productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px 10px 20px;
+}
+
+.productImg {
+    width: 200px;
+    border-radius: 15px;
+    min-height: 250px;
+    object-fit: cover;
+    box-shadow: 10px 10px 5px #ededed;
+}
+
+.endSectionImg {
+    height: 350px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.endSections {
+    text-align: center;
+}
+
+.extra-section {
+    margin: 20px;
+    display: flex;
+    gap: 50px;
+}
+
+.extraContainer {
+    background-color: white;
+    width: 450px;
+}
+
+.extraSection-Product {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 450px;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.extraproductImg {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    padding-bottom: 8px;
+}
+
+.extraContainer a {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.extraContainer h2 {
+    margin: 0;
+    padding: 15px 20px 10px 35px;
+}
+
+.extraContainerImg {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.extraContainerImgNew {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+}
+
+.extraLinkProduct {
+    display: flex;
+    padding: 0;
+    font-weight: bold;
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 0.8em;
+    padding: 0px 20px 20px 35px;
+}
+
+.new {
+    width: 60px;
+    position: absolute;
+    left: 70%;
+    top: 55%;
+}
+
+.footerBack {
+    background-color: var(--navbar-bg);
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.footerLogo {
+    background-color: var(--logo-bg);
+    text-align: center;
+    padding: 60px 60px;
+}
+
+.footerImg {
+    width: 200px;
+}

@@ -1,0 +1,155 @@
+:root {
+    --header-bg: rgb(80, 75, 75);
+    --navbar-bg: rgb(165, 160, 160);
+    --text-color: rgb(66, 63, 63);
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+li {
+    cursor: pointer;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+footer {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Class */
+.header {
+    height: 100px;
+    color: white;
+    background-color: var(--header-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: var(--navbar-bg);
+    color: var(--text-color);
+    height: 30px;
+}
+
+.listStyle {
+    display: flex;
+    margin: 0;
+    padding-left: 10px;
+    list-style: none;
+    gap: 20px;
+}
+
+.divProduct {
+    width: 250px;
+    height: 300px;
+    display: flex;
+    position: relative;
+}
+
+.img {
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.titleProduct {
+    font-weight: bold;
+}
+
+.descriptionProduct {
+    text-align: center;
+}
+
+.footerInfo {
+    background-color: var(--navbar-bg);
+    height: 180px;
+    padding: 20px;
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.footerTopList{
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.fa-question {
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.fa-gift{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.fa-user{
+    font-size: 20px;
+    margin-left: 75px; 
+}
+
+.footerTopList h3 {
+    margin: 0;
+    padding: 0;
+}
+
+.footerListStyle {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 25px;
+}
+
+.reserved {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header-bg);
+}
+
+/* pseudoclass */
+.cursorStyle:hover {
+    color: blue;
+}
