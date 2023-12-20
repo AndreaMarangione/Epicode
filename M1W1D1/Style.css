@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+.subtitle {
+    background-color: #fdfbf1;
+    width: 100%;
+    text-align: center;
+    color: #107777;
+    border-top: 1px solid #fee8af;
+}
+
+.Logo {
+    width: 200px;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a{
+color: rgb(6, 136, 136);
+}
+
+.description {
+    width: 50%;
+    max-width: 700px;
+    min-width: 500px;
+}
+
+.description h1 {
+    color: #333333;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.description h2{
+    border-bottom: 1px solid #a9f5f5;
+    padding-bottom: 20px;
+    }
+
+.description img {
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 10px;
+    color: #9e9e9e;
+}
+
+.link {
+    color: #127878;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    padding-left: 10px;
+    border-left: 1px solid #fee8af;
+}
+
+.link h4 {
+    color: #b5460f;
+    margin: 0;
+    padding: 0;
+}
+
+.Method p{
+padding-left: 40px;
+padding-right: 40px;
+}
+
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.list h4{
+    margin-bottom: 0;
+}
