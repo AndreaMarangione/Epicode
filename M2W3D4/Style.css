@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    min-height: calc(100vh - 160px);
+    padding: 10px 0 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+tr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.size {
+    height: 70px;
+}
+
+#headerShopName {
+    margin: 0;
+}
+
+.product {
+    max-height: 350px;
+    min-width: 275px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 5px;
+}
+
+.productImg {
+    width: 150px;
+    height: 240px;
+    object-fit: contain;
+}
+
+.productHideImg {
+    display: none;
+}
+
+.productDescription {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productDescription p {
+    margin: 0;
+}
+
+.productLink {
+    text-decoration: none;
+    text-align: center;
+}
+
+.productPrice {
+    margin: 0;
+}
+
+.colorPrice1{
+    color: red;
+}
+
+.colorPrice2{
+    color: blue;
+}
+
+.colorPrice3{
+    color: green;
+}
+
+.colorPrice4{
+    color: orange;
+}
+
+.colorPrice5{
+    color: purple;
+}
+
+
+.productComment {
+    display: flex;
+}

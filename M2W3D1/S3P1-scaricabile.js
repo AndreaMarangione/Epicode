@@ -165,11 +165,11 @@ console.log(check3and7(14));
 */
 
 function cutString(word) {
-    if(typeof word === "string" && word.trim() != ""){
+    if (typeof word === "string" && word.trim() != "") {
         const checkString = word.trim();
         const arrayChar = checkString.split("");
         return arrayChar.slice(1, (arrayChar.length - 1)).join("");
-    }else{
+    } else {
         return "Please write one word";
     }
 }
