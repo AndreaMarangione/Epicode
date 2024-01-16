@@ -1,3 +1,6 @@
+let userScore = 0;
+let questionNumber = 2;
+
 function createQuestion(questionNumber) {
     const questionTitle = document.querySelector("#question");
     questionTitle.textContent = questions[questionNumber].question;
@@ -54,7 +57,3 @@ function insertAnswers(questionNumber) {
     }
 }
 insertAnswers(questionNumber);
-
-
-
-

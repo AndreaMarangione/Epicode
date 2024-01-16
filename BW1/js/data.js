@@ -1,6 +1,3 @@
-let userScore = 0;
-let questionNumber = 0;
-
 const questions = [
   {
     category: "Science: Computers",
