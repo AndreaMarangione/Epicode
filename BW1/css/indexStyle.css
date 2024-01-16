@@ -1,0 +1,65 @@
+
+
+
+@media (max-width: 768px) {
+    body {
+
+      font-size: 16px;
+    }
+  }
+
+
+body {
+    
+    background-image: url(./assets/bg.jpg);
+    font-size: 20px;
+}
+
+#mainContainer {
+    /*display: flex;
+    flex-direction: column;*/
+    margin-left: 145px;
+}
+
+
+.image {
+
+    width: 150px;
+    
+}
+
+
+#topBar{
+    margin-top: 70px;
+}
+
+h1 {
+    font-size: 55px;
+    margin-top: 110px;
+    
+    color: antiquewhite;
+}
+
+h4,h5{
+    color: antiquewhite;
+}
+
+p{
+    color: antiquewhite;
+
+}
+ul{
+    color: antiquewhite;
+}
+
+button{
+    margin-top: 75px;
+    margin-left: 150px;
+    border-radius: 5px;
+    background-color: #00ffff;
+    font-size: 20px;
+    height: 45px;
+    width: 150px;
+    cursor: pointer;
+
+}
