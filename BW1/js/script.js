@@ -1,5 +1,6 @@
+let userAnswer;
 let userScore = 0;
-let questionNumber = 2;
+let questionNumber = 0;
 
 function createQuestion(questionNumber) {
     const questionTitle = document.querySelector("#question");
@@ -8,7 +9,9 @@ function createQuestion(questionNumber) {
 createQuestion(questionNumber);
 
 function createAnswerElements(questionNumber) {
-    const answersContainer = document.querySelector("#answersContainer");
+    const main = document.querySelector("main");
+    const answersContainer = document.createElement("section");
+    answersContainer.id = "answersContainer";
     if (questions[questionNumber].type === "multiple") {
         for (let i = 0; i < 4; i++) {
             const button = document.createElement("input");
@@ -26,10 +29,11 @@ function createAnswerElements(questionNumber) {
             radioButton.name = "boolean";
             radioButton.classList.add("radioAnswer");
             labelButton.classList.add("radioLabel");
-            buttonContainer.append(radioButton, labelButton),
+            buttonContainer.append(radioButton, labelButton);
             answersContainer.append(buttonContainer);
         }
     }
+    main.append(answersContainer);
 }
 createAnswerElements(questionNumber);
 
@@ -47,7 +51,7 @@ function insertAnswers(questionNumber) {
                 incorrectIndex += 1;
             }
         }
-    }else{
+    } else {
         const answer = document.querySelectorAll(".radioAnswer");
         const label = document.querySelectorAll(".radioLabel");
         answer[0].value = "True";
@@ -57,3 +61,48 @@ function insertAnswers(questionNumber) {
     }
 }
 insertAnswers(questionNumber);
+
+function readUserAnswer(questionNumber) {
+    if (questions[questionNumber].type === "multiple") {
+        const answer = document.querySelectorAll(".buttonAnswer");
+        answer.forEach(button => {
+            button.addEventListener("click", function () {
+                userAnswer = button.value;
+            })
+        })
+    } else {
+        const answer = document.querySelectorAll(".radioAnswer");
+        answer.forEach(button => {
+            button.addEventListener("click", function () {
+                userAnswer = button.value;
+            })
+        })
+    }
+}
+readUserAnswer(questionNumber);
+
+function checkUserAnswer(questionNumber, userAnswer) {
+    if (userAnswer === questions[questionNumber].correct_answer) {
+        userScore += 1;
+    }
+}
+
+function removeAnswerElements() {
+    const answersContainer = document.querySelector("#answersContainer");
+    answersContainer.remove();
+}
+
+function goToNextQuestion() {
+    const nextBtn = document.querySelector("#nextBtn");
+    nextBtn.addEventListener("click", function () {
+        checkUserAnswer(questionNumber, userAnswer);
+        /*         removeAnswerElements();
+                questionNumber +=1;
+                createQuestion(questionNumber);
+                createAnswerElements(questionNumber);
+                insertAnswers(questionNumber); */
+        console.log(userScore);
+        console.log(questionNumber);
+    })
+}
+goToNextQuestion();
