@@ -1,14 +1,29 @@
-let userAnswer;
-let userScore = 0;
-let questionNumber = 0;
+let userAnswer = null;
+let countTime = 31;
+const countdown = document.querySelector("#countdown");
+const nextBtn = document.querySelector("#nextBtn");
+const indexPage = document.querySelector("#indexPage");
 
-function createQuestion(questionNumber) {
+//countdown
+setInterval(function () {
+    countTime--;
+    countdown.textContent = countTime;
+    if (countTime <= 0) {
+        nextBtn.click();
+    }
+}, 1000)
+
+//show question number on footer
+indexPage.innerHTML = `QUESTION ${questionNumber + 1} <span>/ 10</span>`;
+
+//functions
+function createQuestion() {
     const questionTitle = document.querySelector("#question");
     questionTitle.textContent = questions[questionNumber].question;
 }
-createQuestion(questionNumber);
+createQuestion();
 
-function createAnswerElements(questionNumber) {
+function createAnswerElements() {
     const main = document.querySelector("main");
     const answersContainer = document.createElement("section");
     answersContainer.id = "answersContainer";
@@ -35,9 +50,9 @@ function createAnswerElements(questionNumber) {
     }
     main.append(answersContainer);
 }
-createAnswerElements(questionNumber);
+createAnswerElements();
 
-function insertAnswers(questionNumber) {
+function insertAnswers() {
     if (questions[questionNumber].type === "multiple") {
         const answer = document.querySelectorAll(".buttonAnswer");
         const randomNum = Math.floor(Math.random() * 4);
@@ -60,14 +75,14 @@ function insertAnswers(questionNumber) {
         label[1].textContent = "False";
     }
 }
-insertAnswers(questionNumber);
+insertAnswers();
 
-function readUserAnswer(questionNumber) {
+function readUserAnswer() {
     if (questions[questionNumber].type === "multiple") {
         const answer = document.querySelectorAll(".buttonAnswer");
         answer.forEach(button => {
             button.addEventListener("click", function () {
-                userAnswer = button.value;
+                userAnswer = button.value; 
             })
         })
     } else {
@@ -79,12 +94,24 @@ function readUserAnswer(questionNumber) {
         })
     }
 }
-readUserAnswer(questionNumber);
+readUserAnswer();
 
-function checkUserAnswer(questionNumber, userAnswer) {
+function checkAndSaveUserAnswer() {
+    let answerObj = {
+        answer: "",
+        type: "",
+    }
     if (userAnswer === questions[questionNumber].correct_answer) {
         userScore += 1;
+        answerObj.type = "correct";
+    }else if(userAnswer === null){
+        answerObj.type = null;
+}else{
+        answerObj.type = "incorrect";
     }
+    answerObj.answer = userAnswer;
+    userAnswerSaved.push(answerObj);
+    userAnswer = null;
 }
 
 function removeAnswerElements() {
@@ -93,16 +120,23 @@ function removeAnswerElements() {
 }
 
 function goToNextQuestion() {
-    const nextBtn = document.querySelector("#nextBtn");
     nextBtn.addEventListener("click", function () {
-        checkUserAnswer(questionNumber, userAnswer);
-        /*         removeAnswerElements();
-                questionNumber +=1;
-                createQuestion(questionNumber);
-                createAnswerElements(questionNumber);
-                insertAnswers(questionNumber); */
-        console.log(userScore);
-        console.log(questionNumber);
+        if (questionNumber < questions.length - 1) {  
+            checkAndSaveUserAnswer();
+            removeAnswerElements();
+            questionNumber++;
+            createQuestion();
+            createAnswerElements();
+            insertAnswers();
+            readUserAnswer();
+            countTime = 31;
+            indexPage.innerHTML = `QUESTION ${questionNumber + 1} <span>/ 10</span>`
+            console.log(userScore);
+            console.log(questionNumber);
+            console.log(userAnswerSaved);
+        } else {
+            window.location = "../BW1/result.html"
+        }
     })
 }
 goToNextQuestion();

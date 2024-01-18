@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Result</title>
+    <link rel="stylesheet" href="./css/resultStyle.css">
 </head>
+
 <body>
-    
+    <header>
+        <img id="logo" src="./css/assets/epicode_logo.png" alt="">
+    </header>
+
+    <main>
+        <section id="resultVoteContainer">
+            <p id="resultBenchmark"></p>
+            <div id="resultVote"></div>
+            <p id="correctAnswerCount"></p>
+        </section>
+
+        <section id="resultInfoContainer">
+            <ul id="resultInfoBenchmark">
+                <li>
+                    <label>Correct</label>
+                    <b id="correctAnswerNum"></b>
+                </li>
+                <li>
+                    <label>Wrong</label>
+                    <b id="wrongAnswerNum"></b>
+                </li>
+                <li>
+                    <label>Empty</label>
+                    <b id="emptyAnswerNum"></b>
+                </li>
+                <li>
+                    <label>Total</label>
+                    <b>10</b>
+                </li>
+            </ul>
+        </section>
+
+        <section id="resultListAnswers"></section>
+    </main>
+
+    <script src="./js/globalData.js"></script>
+    <script src="./js/resultScript.js"></script>
 </body>
+
 </html>

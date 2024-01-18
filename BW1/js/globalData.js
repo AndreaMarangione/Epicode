@@ -1,3 +1,7 @@
+let userAnswerSaved = [];
+let userScore = 8;
+let questionNumber = 0;
+
 const questions = [
   {
     category: "Science: Computers",
