@@ -143,6 +143,7 @@ function goToNextQuestion() {
             checkAndSaveUserAnswer();
             window.location = "../BW1/result.html";
             localStorage.setItem("score", userScore);
+            localStorage.setItem("answers", JSON.stringify(userAnswerSaved));
         }
     })
 }

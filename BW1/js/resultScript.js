@@ -1,6 +1,8 @@
 let wrongAnswer = 0;
 let emptyAnswer = 0;
 let score = localStorage.getItem("score");
+const localStorageAnswers = localStorage.getItem("answers");
+const answers = JSON.parse(localStorageAnswers);
 
 function result() {
     const resultBenchmark = document.querySelector("#resultBenchmark");
