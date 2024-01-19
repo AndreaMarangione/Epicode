@@ -14,7 +14,7 @@ setInterval(function () {
 }, 1000)
 
 //show question number on footer
-indexPage.innerHTML = `QUESTION ${questionNumber + 1} <span>/ 10</span>`;
+indexPage.innerHTML = `QUESTION ${questionNumber + 1} <span>/10</span>`;
 
 //functions
 function createQuestion() {
@@ -24,7 +24,7 @@ function createQuestion() {
 createQuestion();
 
 function createAnswerElements() {
-    const main = document.querySelector("main");
+    const questionAndAnswerCont = document.querySelector("#questionAndAnswerCont");
     const answersContainer = document.createElement("section");
     answersContainer.id = "answersContainer";
     if (questions[questionNumber].type === "multiple") {
@@ -48,7 +48,7 @@ function createAnswerElements() {
             answersContainer.append(buttonContainer);
         }
     }
-    main.append(answersContainer);
+    questionAndAnswerCont.append(answersContainer);
 }
 createAnswerElements();
 
@@ -82,7 +82,11 @@ function readUserAnswer() {
         const answer = document.querySelectorAll(".buttonAnswer");
         answer.forEach(button => {
             button.addEventListener("click", function () {
-                userAnswer = button.value; 
+                userAnswer = button.value;
+                for(let i = 0; i < answer.length; i++){
+                    answer[i].classList.remove("buttonAnswerClicked");
+                }
+                button.classList.add("buttonAnswerClicked");
             })
         })
     } else {
@@ -104,9 +108,9 @@ function checkAndSaveUserAnswer() {
     if (userAnswer === questions[questionNumber].correct_answer) {
         userScore += 1;
         answerObj.type = "correct";
-    }else if(userAnswer === null){
+    } else if (userAnswer === null) {
         answerObj.type = null;
-}else{
+    } else {
         answerObj.type = "incorrect";
     }
     answerObj.answer = userAnswer;
@@ -121,7 +125,7 @@ function removeAnswerElements() {
 
 function goToNextQuestion() {
     nextBtn.addEventListener("click", function () {
-        if (questionNumber < questions.length - 1) {  
+        if (questionNumber < questions.length - 1) {
             checkAndSaveUserAnswer();
             removeAnswerElements();
             questionNumber++;
@@ -135,7 +139,10 @@ function goToNextQuestion() {
             console.log(questionNumber);
             console.log(userAnswerSaved);
         } else {
-            window.location = "../BW1/result.html"
+            readUserAnswer();
+            checkAndSaveUserAnswer();
+            window.location = "../BW1/result.html";
+            localStorage.setItem("score", userScore);
         }
     })
 }

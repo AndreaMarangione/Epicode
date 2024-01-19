@@ -1,133 +1,125 @@
-@media (max-width: 768px) {
-  body {
-
-    font-size: 16px;
-  }
-}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&display=swap');
 
 body {
   margin: 0;
-  background-image: url(./assets/bg.jpg);
-  font-size: 20px;
   height: 100vh;
+  background-image: url(./assets/bg.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
-}
-
-#mainContainer {
-  margin-left: 145px;
-}
-
-
-.image {
-
-  width: 150px;
-
-}
-
-
-#topBar {
-  padding-top: 70px;
-}
-
-.topBarDue {
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-}
-
-h1 {
-  font-size: 55px;
-  margin-top: 110px;
-
-  color: antiquewhite;
-}
-
-h5 {
-  color: antiquewhite;
-}
-
-h4 {
-  color: #d20094;
-}
-
-#h5Question {
-  margin-top: 120px;
-  display: flex;
-  justify-content: center;
+  background-size: cover;
   color: white;
 }
 
-p {
-  color: antiquewhite;
+header {
+  height: 85px;
+  text-align: center;
+}
 
+main {
+  min-height: calc(100vh - 205px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+h1 {
+  width: 180px;
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+h3 {
+  color: #D20094;
+  font-family: "Outfit", sans-serif;
+}
+
+p {
+  font-family: "Inter", sans-serif;
+  max-width: 250px;
 }
 
 ul {
-  color: antiquewhite;
+  margin: 0;
+  padding-left: 17px;
+  font-family: "Inter", sans-serif;
+  max-width: 250px;
 }
 
-button {
-  margin-top: 75px;
-  margin-left: 150px;
-  border-radius: 5px;
-  background-color: #00ffff;
-  font-size: 20px;
-  height: 45px;
-  width: 150px;
-  cursor: pointer;
-
+label {
+  font-family: "Inter", sans-serif;
 }
 
-/*.border{
-    border: 5px solid;
-    width: 75px;
-    height: 75px;
-    border-radius: 40px;
-}
-
-.number{
-    font-size: 15px;
-}*/
-
-.circle {
-  width: 100px;
-  height: 100px;
-  border: 5px solid;
-  border-radius: 55px;
+footer {
+  height: 120px;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
 
-
-/*.inner {
-    width: 100%;
-    height: 100%;
-    background-color: yellow;
-  }*/
-
-.number {
-  text-align: center;
-  font-size: 24px;
+#logo {
+  width: 200px;
+  margin-top: 30px;
 }
 
-table {
-  margin-left: 70px;
-  margin-top: 75px;
+.checkboxCont {
+  max-width: 275px;
+  display: flex;
+  gap: 10px;
 }
 
-.btn {
-  width: 230px;
-  height: 75px;
+#check {
+  width: 25px;
 }
 
-.btnX {
-  width: 230px;
-  height: 75px;
-  background-color: #d20094;
+.proceedBtn {
+  height: 40px;
+  width: 120px;
+  margin-bottom: 30px;
+  background-color: #00FFFF;
+  border: none;
+}
+
+.proceedBtn a {
+  color: black;
+  font-family: "Outfit", sans-serif;
+  font-weight: bold;
+  font-size: large;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    display: flex;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .checkboxCont {
+    max-width: 800px;
+  }
+
+  .checkboxCont {
+    display: flex;
+    align-items: center;
+  }
+
+  .proceedBtn {
+    margin: 0;
+  }
 }
