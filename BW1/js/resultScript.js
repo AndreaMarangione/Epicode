@@ -3,8 +3,7 @@ let emptyAnswer = 0;
 let score = localStorage.getItem("score");
 const localStorageAnswers = localStorage.getItem("answers");
 const answers = JSON.parse(localStorageAnswers);
-
-console.log(answers);
+const frontCircle = document.getElementById("frontCircle");
 
 function result() {
     const resultBenchmark = document.querySelector("#resultBenchmark");
@@ -24,6 +23,7 @@ function result() {
         star.src = "../BW1/css/assets/star.svg";
         resultStar.append(star);
     }
+    frontCircle.style.strokeDashoffset = (questions.length - score) / 10;
 }
 result();
 

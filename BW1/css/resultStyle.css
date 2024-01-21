@@ -3,43 +3,78 @@
 
 body {
     margin: 0;
-    height: 100vh;
     background-image: url(./assets/bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    font-family: "Inter", sans-serif;
 }
 
 main {
-    margin-top: 50px;
+    min-height: calc(100vh - 70px);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 70px;
+    gap: 60px;
 }
 
 header {
+    height: 70px;
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+}
+
+svg {
+    width: 180px;
+    height: 180px;
+    fill: none;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#behindCircle {
+    stroke: red;
+    stroke-width: 15px;
+    stroke-opacity: 0.4;
+}
+
+#frontCircle {
+    stroke: green;
+    stroke-width: 15px;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    stroke-dasharray: 1;
+    stroke-dashoffset: 0.5;
+}
+
+.resultContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.resultContainer p{
+    margin: 0;
 }
 
 #logo {
     width: 200px;
+    margin-top: 30px;
 }
 
 #resultVoteContainer {
-
+    height: 180px;
+    width: 180px;
+    margin-top: 60px;
     color: white;
-    border: 1px solid red;
-}
-
-#resultBenchmark {
-    margin: 0;
-}
-
-#correctAnswerCount {
-    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 #resultStar {

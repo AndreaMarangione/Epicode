@@ -15,9 +15,15 @@
 
     <main>
         <section id="resultVoteContainer">
-            <p id="resultBenchmark"></p>
-            <div id="resultVote"></div>
-            <p id="correctAnswerCount"></p>
+            <svg>
+                <circle id="behindCircle" cx="50%" cy="50%" r="80"></circle>
+                <circle id="frontCircle" cx="50%" cy="50%" r="80" pathLength="1"></circle>
+            </svg>
+            <div class="resultContainer">
+                <p id="resultBenchmark"></p>
+                <div id="resultVote"></div>
+                <p id="correctAnswerCount"></p>
+            </div>
         </section>
 
         <section id="resultStar"></section>
@@ -42,8 +48,6 @@
                 </li>
             </ul>
         </section>
-
-        <section id="resultListAnswers"></section>
     </main>
 
     <script src="./js/globalData.js"></script>
