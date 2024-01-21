@@ -29,16 +29,24 @@ h1 {
   margin-top: 50px;
   margin-bottom: 0;
   font-family: "Outfit", sans-serif;
+  line-height: 30px;
 }
 
-h3 {
+h1 span {
+  font-weight: normal;
+}
+
+h2 {
   color: #D20094;
   font-family: "Outfit", sans-serif;
+  margin-bottom: 0;
 }
 
 p {
   font-family: "Inter", sans-serif;
   max-width: 250px;
+  margin-top: 10px;
+  font-weight: 300;
 }
 
 ul {
@@ -62,7 +70,8 @@ footer {
 }
 
 #logo {
-  width: 200px;
+  width: 180px;
+  height: 40px;
   margin-top: 30px;
 }
 
@@ -77,37 +86,71 @@ footer {
 }
 
 .proceedBtn {
-  height: 40px;
-  width: 120px;
+  height: 50px;
+  width: 180px;
   margin-bottom: 30px;
   background-color: #00FFFF;
   border: none;
-}
-
-.proceedBtn a {
+  box-shadow: 0px 0px 40px #00FFFF;
   color: black;
   font-family: "Outfit", sans-serif;
   font-weight: bold;
   font-size: large;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media only screen and (min-width: 1024px) {
+  body {
+    padding-left: 150px;
+  }
+
   header {
     display: flex;
   }
 
   main {
+    min-height: calc(100vh - 290px);
     display: flex;
     flex-direction: column;
     align-items: start;
+    gap: 50px;
   }
 
   footer {
+    width: 45%;
+    height: 205px;
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
+  }
+
+  h1 {
+    width: 400px;
+    font-size: 60px;
+    line-height: 50px;
+  }
+
+  h2 {
+    margin-top: 40px;
+  }
+
+  p {
+    max-width: 550px;
+  }
+
+  ul {
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  li {
+    font-weight: 300;
   }
 
   .checkboxCont {

@@ -11,7 +11,7 @@ body {
 }
 
 header {
-    height: 210px;
+    height: 220px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,7 +19,7 @@ header {
 }
 
 main {
-    min-height: calc(100vh - 350px);
+    min-height: calc(100vh - 360px);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,36 +36,61 @@ footer {
     gap: 30px;
 }
 
+svg {
+    width: 130px;
+    height: 130px;
+    fill: none;
+    position: absolute;
+    top: -6px;
+}
+
 #logo {
     width: 200px;
     margin-top: 30px;
 }
 
+#behindCircle {
+    stroke: gray;
+    stroke-width: 10px;
+    stroke-opacity: 0.4;
+}
+
+#frontCircle {
+    stroke: #00FFFF;
+    stroke-width: 10px;
+    transform: rotate(-90deg);
+    transform-origin: center;
+    stroke-dasharray: 1;
+}
+
 #countdownContainer {
-    height: 100px;
-    width: 100px;
-    border-radius: 50%;
+    height: 150px;
+    width: 150px;
     color: white;
-    background-color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
 }
 
 .countdownSec {
     margin: 0;
     font-size: 10px;
+    font-family: "Inter", sans-serif;
 }
 
 #countdown {
     margin: 0;
     font-size: 50px;
+    min-height: 58px;
+    font-family: "Inter", sans-serif;
 }
 
 .countdownRem {
     margin: 0;
     font-size: 8px;
+    font-family: "Inter", sans-serif;
 }
 
 #questionAndAnswerCont {
@@ -86,6 +111,7 @@ footer {
     text-align: center;
     font-family: "Outfit", sans-serif;
     font-size: large;
+    font-weight: normal;
 }
 
 #answersContainer {
@@ -113,10 +139,13 @@ footer {
 .radioButtonContainer {
     display: flex;
     align-items: center;
+    width: 65px;
+    gap: 10px;
 }
 
-.radioAnswer{
+.radioAnswer {
     cursor: pointer;
+
 }
 
 .radioLabel {
@@ -149,6 +178,10 @@ footer {
         justify-content: space-around;
     }
 
+    svg {
+        top: 10px;
+    }
+
     footer {
         display: flex;
         flex-direction: row;
@@ -165,12 +198,12 @@ footer {
     }
 
     #questionAndAnswerCont {
-        gap: 80px;
+        gap: 115px;
     }
 
     #question {
         max-width: 1000px;
-        font-size: xx-large;
+        font-size: 60px;
     }
 
     #answersContainer {
@@ -190,7 +223,7 @@ footer {
         font-size: large;
     }
 
-    .radioAnswer{
+    .radioAnswer {
         width: 30px;
     }
 

@@ -10,6 +10,14 @@ body {
     background-size: cover;
 }
 
+main {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 70px;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -21,5 +29,77 @@ header {
 }
 
 #resultVoteContainer {
+
     color: white;
+    border: 1px solid red;
+}
+
+#resultBenchmark {
+    margin: 0;
+}
+
+#correctAnswerCount {
+    margin: 0;
+}
+
+#resultStar {
+    text-align: center;
+}
+
+.resultStarVote {
+    width: 30px;
+}
+
+#resultInfoContainer {
+    border: 1px solid white;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+}
+
+#resultInfoBenchmark {
+    color: white;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 15px;
+}
+
+#resultInfoBenchmark li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid white;
+    padding-right: 15px;
+}
+
+.liTotalQuestion {
+    border: none !important;
+    padding: 0 !important;
+}
+
+@media only screen and (min-width: 1024px) {
+    .resultStarVote {
+        width: 60px;
+    }
+
+    #resultInfoContainer {
+        padding-left: 53px;
+        padding-right: 53px;
+    }
+
+    #resultInfoBenchmark {
+        gap: 53px;
+    }
+
+    #resultInfoBenchmark li {
+        padding-right: 53px;
+    }
+
+    #resultInfoBenchmark b {
+        font-size: 30px;
+    }
+
 }

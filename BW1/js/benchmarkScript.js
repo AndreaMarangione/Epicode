@@ -1,6 +1,7 @@
 let userAnswer = null;
-let countTime = 31;
+let countTime = 30;
 const countdown = document.querySelector("#countdown");
+const countdownCircle = document.getElementById("frontCircle");
 const nextBtn = document.querySelector("#nextBtn");
 const indexPage = document.querySelector("#indexPage");
 
@@ -8,6 +9,7 @@ const indexPage = document.querySelector("#indexPage");
 setInterval(function () {
     countTime--;
     countdown.textContent = countTime;
+    countdownCircle.style.strokeDashoffset = -(30 - countTime) / 30;
     if (countTime <= 0) {
         nextBtn.click();
     }
