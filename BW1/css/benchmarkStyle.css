@@ -151,6 +151,7 @@ svg {
 .radioLabel {
     color: white;
     font-family: "Inter", sans-serif;
+    font-size: 20px;
 }
 
 #indexPage {
@@ -228,7 +229,7 @@ svg {
     }
 
     .radioLabel {
-        font-size: large;
+        font-size: 30px;
     }
 
     #nextBtn {
