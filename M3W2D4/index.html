@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's Travel</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <img class="navbar-brand" src="https://picsum.photos/150/50" alt="Agency-Logo">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu">
+            <ion-icon class="navbar-menu-btn" name="menu-outline"></ion-icon>
+        </button>
+
+        <div id="navbar-menu" class="collapse navbar-collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#offerOfTheWeek">Offer Of The Week</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#welcomeSummer">Welcome Summer</a>
+                </li>
+                <li class="nav-item d-none d-md-block">
+                    <a class="nav-link text-white" href="#offerOfTheDay">Offer Of The Day</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#lastMinute">Last Minute</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#testimonial">Testimonial</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="d-flex">
+        <button id="travelCounterBtn" class="btn btn-light border m-3">Count The Travel</button>
+        <button id="cardsRemoveBtn" class="btn btn-light border m-3 width-btn">Remove Cards</button>
+    </div>
+
+    <header class="container mt-1">
+        <div class="jumbotron jumbotron-bg">
+            <h1 class="display-5"> Let's Travel</h1>
+            <p class="lead jumbotron-payoff jumbotron-payoff-style pb-2">Make of your travel a journey</p>
+            <a class="btn btn-light btn-lg border" href="#">Start To Book</a>
+        </div>
+    </header>
+
+    <main>
+        <!--OFFER OF THE WEEK-->
+        <section id="offerOfTheWeek" class="container d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center border-bottom border-dark pb-2 mb-3">
+                <h3 class="display-6 section-title-style">Offer Of The Week</h3>
+                <button class="btn btn-light border h-25" type="button" data-toggle="collapse"
+                    data-target="#offerOfTheWeekCollapse">
+                    Hide
+                </button>
+            </div>
+
+            <div id="offerOfTheWeekCollapse" class="row collapse show">
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/400/300" alt="Travel">
+                        <div class="card-body">
+                            <h5 class="card-title offer-week-card-title-style">Lorem ipsum dolor</h5>
+                            <a class="btn btn-dark btn-lg offer-week-card-btn-style" href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/400/300" alt="Travel">
+                        <div class="card-body">
+                            <h5 class="card-title offer-week-card-title-style">Lorem ipsum dolor</h5>
+                            <a class="btn btn-dark btn-lg offer-week-card-btn-style" href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/400/300" alt="Travel">
+                        <div class="card-body">
+                            <h5 class="card-title offer-week-card-title-style">Lorem ipsum dolor</h5>
+                            <a class="btn btn-dark btn-lg offer-week-card-btn-style" href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/400/300" alt="Travel">
+                        <div class="card-body">
+                            <h5 class="card-title offer-week-card-title-style">Lorem ipsum dolor</h5>
+                            <a class="btn btn-dark btn-lg offer-week-card-btn-style" href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--WELCOME SUMMER-->
+        <section id="welcomeSummer" class="container d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center border-bottom border-dark pb-2 mb-3">
+                <h3 class="display-6 section-title-style">Welcome Summer</h3>
+                <button class="btn btn-light border h-25" type="button" data-toggle="collapse"
+                    data-target="#welcomeSummerCollapse">
+                    Hide
+                </button>
+            </div>
+
+            <div id="welcomeSummerCollapse" class="row collapse show">
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="card shadow">
+                        <img class="card-img-top" src="https://picsum.photos/400/300" alt="Travel">
+                        <div class="card-body">
+                            <h5 class="card-title welcome-summer-card-title-style">Lorem ipsum dolor</h5>
+                            <a class="btn btn-dark btn-lg welcome-summer-card-btn-style" href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="card shadow">
+                        <img class="card-img-top" src="https://picsum.photos/400/300" alt="Travel">
+                        <div class="card-body">
+                            <h5 class="card-title welcome-summer-card-title-style">Lorem ipsum dolor</h5>
+                            <a class="btn btn-dark btn-lg welcome-summer-card-btn-style" href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="card shadow">
+                        <img class="card-img-top" src="https://picsum.photos/400/300" alt="Travel">
+                        <div class="card-body">
+                            <h5 class="card-title welcome-summer-card-title-style">Lorem ipsum dolor</h5>
+                            <a class="btn btn-dark btn-lg welcome-summer-card-btn-style" href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="card shadow">
+                        <img class="card-img-top" src="https://picsum.photos/400/300" alt="Travel">
+                        <div class="card-body">
+                            <h5 class="card-title welcome-summer-card-title-style">Lorem ipsum dolor</h5>
+                            <a class="btn btn-dark btn-lg welcome-summer-card-btn-style" href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="card shadow">
+                        <img class="card-img-top" src="https://picsum.photos/400/300" alt="Travel">
+                        <div class="card-body">
+                            <h5 class="card-title welcome-summer-card-title-style">Lorem ipsum dolor</h5>
+                            <a class="btn btn-dark btn-lg welcome-summer-card-btn-style" href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="card shadow">
+                        <img class="card-img-top" src="https://picsum.photos/400/300" alt="Travel">
+                        <div class="card-body">
+                            <h5 class="card-title welcome-summer-card-title-style">Lorem ipsum dolor</h5>
+                            <a class="btn btn-dark btn-lg welcome-summer-card-btn-style" href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--OFFER OF THE DAY-->
+        <section id="offerOfTheDay" class="container d-none d-md-block">
+            <div class="d-flex justify-content-between align-items-center border-bottom border-dark pb-2 mb-3">
+                <h3 class="display-6 section-title-style">Offer Of The Day</h3>
+                <button class="btn btn-light border h-25" type="button" data-toggle="collapse"
+                    data-target="#offerOfTheDayCollapse">
+                    Hide
+                </button>
+            </div>
+
+            <div id="offerOfTheDayCollapse" class="collapse show">
+                <div class="row d-flex align-items-center">
+                    <div class="col-8">
+                        <img class="card-img-top" src="https://picsum.photos/800/400" alt="">
+                    </div>
+
+                    <div class="col-4 d-flex flex-column justify-content-center">
+                        <h3 class="offer-day-title-style">Lorem, ipsum.</h3>
+                        <p class="offer-day-description-style">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Nulla, harum.</p>
+                        <p class="offer-day-description-style">from 04/08/2024 to 16/08/2024</p>
+                        <p class="text-muted mb-0">1000$/night</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--LAST MINUTE-->
+        <section id="lastMinute" class="container d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center border-bottom border-dark pb-2 mb-3">
+                <h3 class="display-6 section-title-style">Last Minute</h3>
+                <button class="btn btn-light border h-25" type="button" data-toggle="collapse"
+                    data-target="#lastMinuteCollapse">
+                    Hide
+                </button>
+            </div>
+
+            <div id="lastMinuteCollapse" class="row collapse show">
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/400/300" alt="Travel">
+                        <div class="card-body">
+                            <h5 class="card-title welcome-summer-card-title-style">Lorem ipsum dolor</h5>
+                            <a class="btn btn-dark btn-lg welcome-summer-card-btn-style" href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/400/300" alt="Travel">
+                        <div class="card-body">
+                            <h5 class="card-title welcome-summer-card-title-style">Lorem ipsum dolor</h5>
+                            <a class="btn btn-dark btn-lg welcome-summer-card-btn-style" href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/400/300" alt="Travel">
+                        <div class="card-body">
+                            <h5 class="card-title welcome-summer-card-title-style">Lorem ipsum dolor</h5>
+                            <a class="btn btn-dark btn-lg welcome-summer-card-btn-style" href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/400/300" alt="Travel">
+                        <div class="card-body">
+                            <h5 class="card-title welcome-summer-card-title-style">Lorem ipsum dolor</h5>
+                            <a class="btn btn-dark btn-lg welcome-summer-card-btn-style" href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/400/300" alt="Travel">
+                        <div class="card-body">
+                            <h5 class="card-title welcome-summer-card-title-style">Lorem ipsum dolor</h5>
+                            <a class="btn btn-dark btn-lg welcome-summer-card-btn-style" href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-6 col-md-4 col-lg-2 mb-4">
+                    <div class="card">
+                        <img class="card-img-top" src="https://picsum.photos/400/300" alt="Travel">
+                        <div class="card-body">
+                            <h5 class="card-title welcome-summer-card-title-style">Lorem ipsum dolor</h5>
+                            <a class="btn btn-dark btn-lg welcome-summer-card-btn-style" href="#">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--TESTIMONIAL-->
+        <section id="testimonial" class="container ">
+            <div class="d-flex justify-content-between align-items-center border-bottom border-dark pb-2 mb-3">
+                <h3 class="display-6 section-title-style mb-2">Testimonial</h3>
+                <button class="btn btn-light border h-25" type="button" data-toggle="collapse"
+                    data-target="#testimonialCollapse">
+                    Hide
+                </button>
+            </div>
+
+            <div id="testimonialCollapse" class="collapse show">
+                <div class="row mb-3 d-flex align-items-center">
+                    <div class="col-3 col-lg-2 text-center">
+                        <img class="rounded-circle" src="https://picsum.photos/50/50" alt="user-image">
+                        <div>Lorem ipsum</div>
+                    </div>
+                    <div class="col-9 col-lg-10 d-flex align-items-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis est amet, at illum
+                        iusto,
+                        dolor possimus, perspiciatis illo quos delectus accusamus deserunt nam rerum neque? Soluta qui
+                        nemo
+                        velit.
+                    </div>
+                </div>
+                <div class="row mb-3 d-flex align-items-center">
+                    <div class="col-3 col-lg-2 text-center">
+                        <img class="rounded-circle" src="https://picsum.photos/50/50" alt="user-image">
+                        <div>Lorem ipsum</div>
+                    </div>
+                    <div class="col-9 col-lg-10 d-flex align-items-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis est amet, at illum
+                        iusto,
+                        dolor possimus, perspiciatis illo quos delectus accusamus deserunt nam rerum neque? Soluta qui
+                        nemo
+                        velit.
+                    </div>
+                </div>
+                <div class="row mb-3 d-flex align-items-center">
+                    <div class="col-3 col-lg-2 text-center">
+                        <img class="rounded-circle" src="https://picsum.photos/50/50" alt="user-image">
+                        <div>Lorem ipsum</div>
+                    </div>
+                    <div class="col-9 col-lg-10 d-flex align-items-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis est amet, at illum
+                        iusto,
+                        dolor possimus, perspiciatis illo quos delectus accusamus deserunt nam rerum neque? Soluta qui
+                        nemo
+                        velit.
+                    </div>
+                </div>
+                <div class="row mb-3 d-flex align-items-center">
+                    <div class="col-3 col-lg-2 text-center">
+                        <img class="rounded-circle" src="https://picsum.photos/50/50" alt="user-image">
+                        <div>Lorem ipsum</div>
+                    </div>
+                    <div class="col-9 col-lg-10 d-flex align-items-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores corporis est amet, at illum
+                        iusto,
+                        dolor possimus, perspiciatis illo quos delectus accusamus deserunt nam rerum neque? Soluta qui
+                        nemo
+                        velit.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container-fluid bg-dark text-white d-flex flex-column align-items-center">
+        <button class="btn btn-light my-3" type="button" data-toggle="modal" data-target="#footerModal">
+            Contact Us
+        </button>
+
+        <div class="text-center mb-3">
+            Copyright © 2021 | Let's Travel S.p.A. Sede Legale: Piazza del Duomo, 5 - 51100 Pistoia - Italia | Tel.
+            (+39)334.5427893 |
+            Capitale Sociale sottoscritto e versato: € 5.491.262.014
+            Codice fiscale: 06354298702 | Partita IVA: 06354298702
+        </div>
+
+        <div id="footerModal" class="modal fade" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header mt-2">
+                        <input type="email" placeholder="write your email">
+                        <button class="close" type="button" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <input type="text" placeholder="write your message">
+                    </div>
+                    <div class="modal-footer ">
+                        <button class="btn btn-light border" type="button" data-dismiss="modal">Close</button>
+                        <button class="btn btn-dark" type="button">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>

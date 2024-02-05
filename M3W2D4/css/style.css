@@ -1,0 +1,98 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.width-btn {
+    width: 133px;
+}
+
+.jumbotron-bg {
+    background-image: url(https://static.vecteezy.com/ti/foto-gratuito/p2/12168159-paesaggi-marini-di-bellissimo-tramonto-su-il-mare-con-colorato-cielo-su-vacanza-gratuito-foto.JPG);
+    background-size: cover;
+}
+
+.navbar-menu-btn {
+    color: white;
+    width: 30px;
+    height: 30px;
+}
+
+.jumbotron-payoff-style {
+    font-size: medium;
+}
+
+.section-title-style {
+    font-size: x-large;
+}
+
+.offer-week-card-title-style {
+    font-size: medium;
+}
+
+.offer-week-card-btn-style {
+    font-size: x-small;
+}
+
+.welcome-summer-card-title-style {
+    font-size: 16px;
+}
+
+.welcome-summer-card-btn-style {
+    font-size: 10px;
+}
+
+.offer-day-title-style {
+    font-size: 20px;
+}
+
+.offer-day-description-style {
+    font-size: 13px;
+}
+
+.card-display-none {
+    display: none;
+}
+
+footer {
+    font-size: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    .jumbotron-payoff-style {
+        font-size: larger;
+    }
+
+    .section-title-style {
+        font-size: 2.5rem;
+    }
+
+    .offer-week-card-title-style {
+        font-size: 20px;
+    }
+
+    .offer-week-card-btn-style {
+        font-size: 20px;
+    }
+
+    .welcome-summer-card-btn-style {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .offer-day-title-style {
+        font-size: 28px;
+    }
+
+    .offer-day-description-style {
+        font-size: 20px;
+    }
+
+    .welcome-summer-card-btn-style {
+        font-size: 10px;
+    }
+
+    footer {
+        font-size: 16px;
+    }
+}
