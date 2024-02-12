@@ -1,0 +1,1287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-light px-3">
+        <img class="navbar-brand" src="./assets/logo.svg" alt="logo">
+
+        <div class="d-flex align-items-center order-md-2 gap-3">
+            <div class="navbar-icon-container border rounded-circle d-flex justify-content-center align-items-center">
+                <ion-icon class="navbar-notify-style" name="notifications-outline"></ion-icon>
+            </div>
+            <div class="dropdown">
+                <a role="button" data-bs-toggle="dropdown" href="">
+                    <img class="rounded-circle navbar-user-img-style" src="./assets/avatar-1.jpg" alt="user-image">
+                </a>
+                <div class="dropdown-menu user-dropdown p-0 m-0 border-0">
+                    <ul class="list-group">
+                        <li class="list-group-item d-flex align-items-center gap-3">
+                            <img class="rounded-circle navbar-user-img-style" src="./assets/avatar-1.jpg"
+                                alt="user-image">
+                            <div>
+                                <p class="m-0">Annette Black</p>
+                                <p class="m-0 text-muted">annette@geeksui.com</p>
+                            </div>
+                        </li>
+                        <li class="list-group-item">
+                            <ul class="list-unstyled d-flex flex-column gap-2">
+                                <li class="d-flex align-items-center gap-2">
+                                    <ion-icon name="person-outline"></ion-icon>
+                                    <a class="link-dropdown" href="">Profile</a>
+                                </li>
+                                <li class="d-flex align-items-center gap-2">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                    <a class="link-dropdown" href="">Subscription</a>
+                                </li>
+                                <li class="d-flex align-items-center gap-2">
+                                    <ion-icon name="settings-outline"></ion-icon>
+                                    <a class="link-dropdown" href="">Settings</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list-group-item d-flex align-items-center gap-2">
+                            <ion-icon name="power-outline"></ion-icon>
+                            <a class="link-dropdown" href="">Sign Out</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <button class="navbar-toggler border nav-btn-style p-1" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbar-menu">
+                <ion-icon class="navbar-menu-btn" name="menu-outline"></ion-icon>
+            </button>
+        </div>
+
+        <div id="navbar-menu" class="collapse navbar-collapse order-md-1">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="">Browse</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Item</a></li>
+                        <li><a class="dropdown-item" href="#">Item</a></li>
+                        <li><a class="dropdown-item" href="#">Item</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="">Landings</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Item</a></li>
+                        <li><a class="dropdown-item" href="#">Item</a></li>
+                        <li><a class="dropdown-item" href="#">Item</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="">Pages</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Item</a></li>
+                        <li><a class="dropdown-item" href="#">Item</a></li>
+                        <li><a class="dropdown-item" href="#">Item</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" href="">Accounts</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Item</a></li>
+                        <li><a class="dropdown-item" href="#">Item</a></li>
+                        <li><a class="dropdown-item" href="#">Item</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="position-relative z-2">
+        <div class="hero container-fluid text-white p-0">
+            <div class="container">
+                <div class="row d-lg-flex align-items-center">
+                    <div class="col-12 col-lg-6 mb-3">
+                        <h1 class="hero-title-style lh-1 mt-4 mb-2 fw-bolder">
+                            Welcome Web Students!
+                        </h1>
+                        <p class="hero-description-style">
+                            Hand-picked Instructor and expertly crafted courses, designed for the modern students and
+                            entrepreneur.
+                        </p>
+                        <div class="hero-btn-style d-flex gap-1">
+                            <button class="btn btn-lg text-white px-2" type="button">Browse Courses</button>
+                            <button class="btn btn-light btn-lg px-2" type="button">Are You Instructor?</button>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-6">
+                        <img class="d-block mx-lg-auto img-fluid" src="./assets/hero-img.png" alt="hero-img" width="700"
+                            height="500" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container py-4">
+            <ul class="d-flex justify-content-between flex-wrap header-list-style m-0 ps-0 row-gap-2">
+                <li class="d-flex align-items-center gap-3">
+                    <div
+                        class="d-flex justify-content-center align-items-center header-list-item-icon-container rounded-circle">
+                        <ion-icon class="header-list-item-icon" name="videocam-outline"></ion-icon>
+                    </div>
+                    <div class="header-list-item-description">
+                        <h5 class="m-0">30,000 online courses</h5>
+                        <p class="text-muted m-0">Enjoy a variety of fresh topics</p>
+                    </div>
+                </li>
+
+                <li class="d-flex align-items-center gap-3">
+                    <div
+                        class="d-flex justify-content-center align-items-center header-list-item-icon-container rounded-circle">
+                        <ion-icon class="header-list-item-icon" name="people-outline"></ion-icon>
+                    </div>
+                    <div class="header-list-item-description">
+                        <h5 class="m-0">Expert instructions</h5>
+                        <p class="text-muted m-0">Find the right instructor for you</p>
+                    </div>
+                </li>
+
+                <li class="d-flex align-items-center gap-3">
+                    <div
+                        class="d-flex justify-content-center align-items-center header-list-item-icon-container rounded-circle">
+                        <ion-icon class="header-list-item-icon" name="time-outline"></ion-icon>
+                    </div>
+                    <div class="header-list-item-description">
+                        <h5 class="m-0">Lifetime access</h5>
+                        <p class="text-muted m-0">Learn on your schedule</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="position-relative z-1">
+        <section id="recommendedCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner pb-4">
+                <div class="container mb-4">
+                    <h3>Recommended to you</h3>
+                </div>
+
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-graphql.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-javascript.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-none d-md-block col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-node.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-none d-md-block col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-laravel.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-graphql.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-javascript.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-none d-md-block col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-node.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-none d-md-block col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-laravel.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="d-none d-md-flex carousel-control-prev carousel-btnLx-style border bg-white" type="button"
+                data-bs-target="#recommendedCarousel" data-bs-slide="prev">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </button>
+            <button class="d-none d-md-flex carousel-control-next bg-white carousel-btnRx-style border bg-white" type="button"
+                data-bs-target="#recommendedCarousel" data-bs-slide="next">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+        </section>
+
+        <section id="mostPopularCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner pb-4">
+                <div class="container mb-4">
+                    <h3>Most Popular</h3>
+                </div>
+
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-graphql.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-javascript.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-none d-md-block col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-node.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-none d-md-block col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-laravel.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-graphql.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-javascript.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-none d-md-block col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-node.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-none d-md-block col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-laravel.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="d-none d-md-flex carousel-control-prev carousel-btnLx-style border bg-white" type="button"
+                data-bs-target="#mostPopularCarousel" data-bs-slide="prev">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </button>
+            <button class="d-none d-md-flex carousel-control-next bg-white carousel-btnRx-style border bg-white" type="button"
+                data-bs-target="#mostPopularCarousel" data-bs-slide="next">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+        </section>
+
+        <section id="trendingCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner pb-4">
+                <div class="container mb-4">
+                    <h3>Trending</h3>
+                </div>
+
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-graphql.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-javascript.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-none d-md-block col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-node.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-none d-md-block col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-laravel.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-graphql.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-javascript.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-none d-md-block col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-node.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-none d-md-block col-6 col-md-3">
+                                <div class="card">
+                                    <img class="card-img-top" src="./assets/course-laravel.jpg" alt="card-img">
+                                    <div class="card-body border-bottom p-1 p-lg-3">
+                                        <h6 class="card-title">GraphQL: introduction to graphQL for beginners</h6>
+                                        <div class="d-flex flex-column gap-1">
+                                            <div class="d-flex flex-column flex-lg-row gap-lg-2">
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <ion-icon name="time-outline"></ion-icon>
+                                                    <span class="text-muted">2h 40m</span>
+                                                </div>
+                                                <div class="d-flex align-items-center gap-2">
+                                                    <img class="card-level" src="./assets/level.png" alt="level">
+                                                    <span class="text-muted">Advance</span>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center gap-1">
+                                                <img class="card-stars" src="./assets/star.png" alt="star">
+                                                <span class="card-score">2.5</span>
+                                                <span class="text-muted small">(1,500)</span>
+                                            </div>
+                                            <div class="fw-bolder">
+                                                $500 <del class="text-muted small">$600</del>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="card-body card-footer-style d-flex justify-content-between align-items-center p-1 p-lg-3">
+                                        <div class="d-flex align-items-center gap-1">
+                                            <img class="rounded-circle card-user-img" src="/assets/avatar-2.jpg"
+                                                alt="user">
+                                            <p class="text-muted m-0">Brooklyn Simmons</p>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"
+                                            stroke-linecap="round" stroke-linejoin="round" class="bookmark">
+                                            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="d-none d-md-flex carousel-control-prev carousel-btnLx-style border bg-white" type="button"
+                data-bs-target="#trendingCarousel" data-bs-slide="prev">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </button>
+            <button class="d-none d-md-flex carousel-control-next bg-white carousel-btnRx-style border bg-white" type="button"
+                data-bs-target="#trendingCarousel" data-bs-slide="next">
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+        </section>
+    </main>
+
+    <footer>
+        <div
+            class="container text-muted border-top d-flex flex-column flex-md-row justify-content-center justify-content-md-between py-2">
+            <p class="m-0 text-center">© 2022 Geeks. All Rights Reserved</p>
+            <ul class="list-unstyled d-flex justify-content-center gap-4 m-0">
+                <li>Privacy</li>
+                <li>Terms</li>
+                <li>Feedback</li>
+                <li>Support</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
