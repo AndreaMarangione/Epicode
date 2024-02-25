@@ -22,24 +22,30 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
-const watchFavourites = (entries) => {
+const watchCarousel = (entries) => {
     entries.forEach(entry => {
-        if(entry.isIntersecting){
-            console.log("l'elemento è nella viewport");
-        }else{
-            console.log("l'elemento è uscito dalla viewport");
+        if (entry.boundingClientRect.top > 0 && entry.isIntersecting) {
+            entry.target.classList.remove("row-hidden");
+            entry.target.classList.add("row-enter-animation");
+        } else if (entry.boundingClientRect.top < 0 && entry.isIntersecting) {
+            entry.target.classList.remove("row-hidden");
+            entry.target.classList.add("row-exit-animation");
+        } else {
+            entry.target.classList.add("row-hidden");
+            entry.target.classList.remove("row-enter-animation");
+            entry.target.classList.remove("row-exit-animation");
         }
     });
 }
 
-const observer = new IntersectionObserver(watchFavourites, {
+const targetElement = document.querySelectorAll('.carousel');
+
+const observer = new IntersectionObserver(watchCarousel, {
     root: null,
     rootMargin: "0px",
-    threshold: 0.5,
+    threshold: 0.3,
 })
 
-const targetElement = document.querySelector('.favourites');
-
-observer.observe(targetElement);
-
-
+targetElement.forEach((carousel) => {
+    observer.observe(carousel);
+})
