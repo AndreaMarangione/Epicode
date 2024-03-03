@@ -87,11 +87,13 @@
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border: 1px solid;
+    min-width: 251px;
 }
 
 .card-booking-date-container input:last-of-type {
     margin-top: -2px;
     border: 1px solid;
+    min-width: 251px;
 }
 
 .card-booking-guests {
@@ -111,12 +113,12 @@
     height: 100px;
 }
 
-.user-img{
+.user-img {
     width: 55px;
     height: 55px;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width:768px) {
     .card-booking {
         max-width: 350px;
         position: sticky;
@@ -124,12 +126,6 @@
         left: 60%;
     }
 
-    .main-list-description {
-        font-size: 16px;
-    }
-}
-
-@media only screen and (min-width:768px) {
     .card-booking-date-container {
         width: 292px;
     }
@@ -138,6 +134,7 @@
         border-top-left-radius: 10px;
         border-top-right-radius: 0;
         border: 1px solid;
+        min-width: auto;
         width: 50%;
     }
 
@@ -146,7 +143,12 @@
         margin-left: -2px;
         border-top-right-radius: 10px;
         border: 1px solid;
+        min-width: auto;
         width: 50%;
+    }
+
+    .main-list-description {
+        font-size: 16px;
     }
 }
 
