@@ -1,0 +1,62 @@
+.navbar-logo {
+    width: 118px;
+    height: 64px;
+}
+
+.navbar-globe-icon {
+    font-size: 25px;
+}
+
+.dropdown-menu {
+    inset: 0 10px auto auto !important;
+}
+
+.navbar-dropdown-icons {
+    color: #696969;
+}
+
+.navbar-dropdown-icons ion-icon:first-of-type {
+    font-size: 25px;
+}
+
+.navbar-dropdown-icons ion-icon:last-of-type {
+    font-size: 35px;
+}
+
+.header-plus-btn {
+    height: 35px;
+    width: 35px;
+    background-color: #E41D56;
+    color: white;
+}
+
+.header-houses-btn {
+    border: 2px solid rgb(189, 185, 185);
+    background-color: #F8F9FA;
+    color: rgb(90, 87, 87);
+}
+
+.card-apartment{
+    width: 300px;
+}
+
+.card-img {
+    width: 300px;
+    height: 250px;
+}
+
+.card-star{
+    width: 13px;
+    height: 13px;
+}
+
+@media only screen and (width:1440px) {
+    .card-apartment{
+        width: 250px;
+    }
+    
+    .card-img {
+        width: 250px;
+        height: 200px;
+    }
+}

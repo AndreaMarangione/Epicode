@@ -1,0 +1,171 @@
+.navbar-logo {
+    width: 118px;
+    height: 64px;
+}
+
+.navbar-globe-icon {
+    font-size: 25px;
+}
+
+.dropdown-menu {
+    inset: 0 10px auto auto !important;
+}
+
+.navbar-dropdown-icons {
+    color: #696969;
+}
+
+.navbar-dropdown-icons ion-icon:first-of-type {
+    font-size: 25px;
+}
+
+.navbar-dropdown-icons ion-icon:last-of-type {
+    font-size: 35px;
+}
+
+.carousel-img {
+    height: 300px;
+}
+
+.header-grid-first {
+    height: calc(300px + .5rem);
+}
+
+.header-grid-first-img {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.header-grid {
+    max-height: 300px;
+}
+
+.header-grid-second-img {
+    border-top-right-radius: 15px;
+}
+
+.header-grid-fourth-img {
+    border-bottom-right-radius: 15px;
+}
+
+.main-list-icon-container {
+    width: 30px;
+    height: 30px;
+}
+
+.main-list-icon {
+    font-size: 30px;
+}
+
+.main-list-description {
+    font-size: 13px;
+}
+
+.card-booking {
+    max-width: 300px;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.card-booking-header {
+    min-width: 100%;
+}
+
+.card-booking-description {
+    width: 100px;
+}
+
+.card-booking-star {
+    width: 13px;
+    height: 13px;
+}
+
+.card-booking-inputs-container {
+    max-width: 290px;
+}
+
+.card-booking-date-container input:first-of-type {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border: 1px solid;
+}
+
+.card-booking-date-container input:last-of-type {
+    margin-top: -2px;
+    border: 1px solid;
+}
+
+.card-booking-guests {
+    margin-top: -2px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 1px solid;
+}
+
+.card-booking-btn {
+    min-width: 290px;
+    background-color: #FF385C;
+    color: white;
+}
+
+.form-review-input {
+    height: 100px;
+}
+
+.user-img{
+    width: 55px;
+    height: 55px;
+}
+
+@media only screen and (min-width: 768px) {
+    .card-booking {
+        max-width: 350px;
+        position: sticky;
+        top: 50%;
+        left: 60%;
+    }
+
+    .main-list-description {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .card-booking-date-container {
+        width: 292px;
+    }
+
+    .card-booking-date-container input:first-of-type {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0;
+        border: 1px solid;
+        width: 50%;
+    }
+
+    .card-booking-date-container input:last-of-type {
+        margin-top: 0;
+        margin-left: -2px;
+        border-top-right-radius: 10px;
+        border: 1px solid;
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .header-grid-first {
+        height: calc(400px + .5rem);
+    }
+
+    .header-grid {
+        max-height: 400px;
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .header-grid-first {
+        height: calc(500px + .5rem);
+    }
+
+    .header-grid {
+        max-height: 500px;
+    }
+}
