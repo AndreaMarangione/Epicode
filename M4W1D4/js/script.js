@@ -27,7 +27,7 @@ const getAlborosieAlbums = async () => {
     }
 }
 
-const alborosieAlbums = getAlborosieAlbums().then(res => {
+const alborosieAlbums =  getAlborosieAlbums().then(res => {
     for (let index = 0; index < 4; index++) {
         createAlbums(res[index], alborosie);
     }
@@ -85,10 +85,7 @@ modalBtn.addEventListener("click", () => {
     const songList = document.querySelector("#songList");
     const cardAlbumTitle = document.querySelectorAll("#cardAlbum > h5");
     const list = document.createElement("ul");
-    if (songList.childElementCount > 0) {
-        const oldList = document.querySelector("ul");
-        songList.removeChild(oldList);
-    }
+    songList.innerHTML = "";
     cardAlbumTitle.forEach(title => {
         const song = document.createElement("li");
         song.innerHTML = `<p>${title.innerText}</p>`;
@@ -96,3 +93,19 @@ modalBtn.addEventListener("click", () => {
     })
     songList.append(list);
 })
+
+class Person {
+    constructor(age, firstName, surname){
+        this.age = age;
+        this.firstName = firstName;
+        this.surname = surname;
+    }
+    getNameAndSurname(){
+        return `${this.age} ${this.firstName} ${this.surname}`;
+    }
+}
+
+const myPerson = new Person(40, "Andrea", "Marangione");
+console.log(myPerson);
+
+console.log(myPerson.getNameAndSurname());
