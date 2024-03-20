@@ -71,6 +71,10 @@ nav {
     overflow: hidden;
 }
 
+.book-info-image {
+    width: 300px;
+}
+
 @media only screen and (min-width: 375px) {
     .dropdown-menu {
         inset: 0 auto auto -35px !important;
@@ -87,6 +91,7 @@ nav {
     .nav-search-container button {
         width: 60px;
     }
+
     .dropdown-menu {
         inset: 0 0 auto auto !important;
     }

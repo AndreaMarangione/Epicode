@@ -4,7 +4,7 @@ const mySection = document.querySelector("#mySection");
 const searchInput = document.getElementById("searchInput");
 
 window.onload = () => {
-    myCart === null ? myCart = [] : ""; 
+    myCart === null ? myCart = [] : "";
     showBookInCart();
 }
 const showSpinner = () => {
@@ -86,7 +86,10 @@ const createCard = (book) => {
     const cardDescription = document.createElement("div");
     const cardTitle = document.createElement("h6");
     const cardText = document.createElement("p");
+    const cardBtnContainer = document.createElement("div");
     const cardAddCartBtn = document.createElement("a");
+    const cardSkipBtn = document.createElement("a");
+    const cardInfoBtn = document.createElement("a");
     cardContainer.classList.add("col-12", "col-md-4", "col-lg-3", "col-auto", "d-flex", "justify-content-center");
     card.classList.add("card", "p-0");
     card.id = book.asin;
@@ -94,17 +97,25 @@ const createCard = (book) => {
     cardDescription.classList.add("card-body", "d-flex", "flex-column", "justify-content-between");
     cardTitle.classList.add("card-title");
     cardText.classList.add("card-text");
-    cardAddCartBtn.classList.add("book-add-cart", "btn", "btn-primary");
+    cardBtnContainer.classList.add("d-flex", "flex-column", "gap-1");
+    cardAddCartBtn.classList.add("book-add-cart", "btn", "btn-success");
+    cardSkipBtn.classList.add("btn", "btn-secondary");
+    cardInfoBtn.classList.add("btn", "btn-info");
     image.src = book.img;
     cardTitle.textContent = book.title;
     cardText.textContent = `Price: ${book.price}`;
     cardAddCartBtn.textContent = "Add To Cart";
+    cardSkipBtn.textContent = "Skip";
+    cardInfoBtn.textContent = "More Info";
     cardAddCartBtn.addEventListener("click", () => {
         saveToCart(book);
         defineBooksInCart(book.asin, card);
     })
+    cardSkipBtn.addEventListener("click", () => cardContainer.remove());
+    cardInfoBtn.href = `./bookInfo.html?id=${book.asin}`;
     defineBooksInCart(book.asin, card);
-    cardDescription.append(cardTitle, cardText, cardAddCartBtn);
+    cardBtnContainer.append(cardAddCartBtn, cardSkipBtn, cardInfoBtn);
+    cardDescription.append(cardTitle, cardText, cardBtnContainer);
     card.append(image, cardDescription);
     cardContainer.append(card);
     mySection.append(cardContainer);
